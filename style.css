@@ -119,12 +119,17 @@
     --bs-form-invalid-border-color: #dc3545;
 }
 
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
 #logo {
     max-height: 80px;
 }
 
 .navbar {
-    background-color: var(--bs-white)!important;
+    background-color: var(--bs-white) !important;
 }
 
 .navbar-nav {
@@ -133,6 +138,22 @@
     justify-content: space-between;
 }
 
+/* -------------- Main swiper --------------------- */
+.swiper {
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- footer --------------------- */
 footer {
     gap: 20px;
 }
@@ -147,6 +168,7 @@ footer h3 {
     text-decoration: none;
     color: #6B7280;
 }
+
 #footer-about a:hover, #footer-product a:hover {
     color: var(--bs-black);
 }
@@ -160,6 +182,7 @@ footer h3 {
 #footer-certificate img {
     height: 40px;
 }
+
 #footer-certificate img:nth-child(3) {
     height: 55px;
 }
