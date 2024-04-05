@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Đặc sản Miền Tây</title>
 </head>
@@ -15,7 +18,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand ms-lg-5" href="#"><img src="assets/images/logo.png" alt="" id="logo"></a>
+                <a class="navbar-brand ms-lg-5" href="#"><img src="assets/img/web-component/logo.png" alt=""
+                        id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -40,12 +44,12 @@
                                 <a class="nav-link" href="#">LIÊN HỆ</a>
                             </li>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex align-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a class="nav-link" href="#"><i class="bi bi-search fs-3"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="nav-link" href="#"><i class="bi bi-cart3 fs-3"></i></a>
                             </li>
                         </div>
                         <!-- <li class="nav-item dropdown">
@@ -65,54 +69,87 @@
         </nav>
     </header>
     <main>
-        <div class="main-slider">
+        <section class="main-slider">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="container-fluid d-flex">
                             <div class="card-data w-50 align-content-center">
-                                <h2>
-                                    Header 1
+                                <h2 class="h1" style="font-weight: bold;">
+                                    Sầu Riêng RI6
                                 </h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, veritatis!
+                                    Khi nhắc đến sầu riêng, người ta sẽ liên tưởng đến vị ngọt bùi của sầu riêng miền
+                                    Tây, đặc biệt là sầu riêng RI6 – vua sầu riêng được biết đến cả trong và ngoài nước.
+                                    Với hương thơm ngất ngây, màu vàng tươi bắt mắt, sầu riêng RI6 làm say đắm lòng du
+                                    khách
                                 </p>
-                                <button class="rounded-pill bg-primary">Đặt hàng ngay</button>
+                                <button class="rounded-pill bg-primary text-light py-3 px-4 border-0 fw-bold">Đặt hàng
+                                    ngay</button>
                             </div>
-                            <div class="card-ing w-50">
-                                <img src="assets/images/camVinh1-scaled-1.jpg" alt="">
+                            <div class="card-img w-50">
+                                <img src="assets/img/product/traicay/sauriengri6.png" alt=""
+                                    class="img-fluid object-fit-cover">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-fluid d-flex">
                             <div class="card-data w-50 align-content-center">
-                                <h2>
-                                    Header 2
+                                <h2 class="h1" style="font-weight: bold;">
+                                    Chùm Ruột
                                 </h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, veritatis!
+                                    Ít du khách nào biết đến quả chùm ruột, nhưng sau khi thưởng thức, họ không khỏi ấn
+                                    tượng. Quả mọc thành chùm, bám sát vào thân cây, nhỏ bằng đầu ngón tay, có màu vàng
+                                    xanh
                                 </p>
-                                <button class="rounded-pill bg-primary">Đặt hàng ngay</button>
+                                <button class="rounded-pill bg-primary text-light py-3 px-4 border-0 fw-bold">Đặt hàng
+                                    ngay</button>
                             </div>
-                            <div class="card-ing w-50">
-                                <img src="assets/images/camVinh1-scaled-1.jpg" alt="">
+                            <div class="card-img w-50">
+                                <img src="assets/img/web-component/main-slider/chum ruot.jpg" alt=""
+                                    class="img-fluid object-fit-cover">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="container-fluid d-flex">
                             <div class="card-data w-50 align-content-center">
-                                <h2>
-                                    Header 3
+                                <h2 class="h1" style="font-weight: bold;">
+                                    Bánh Tét Cần Thơ
                                 </h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, veritatis!
+                                    Bánh tét - món ăn không thể thiếu trong mâm cỗ của người miền Tây, nhất là tại Cần
+                                    Thơ. Ngồi canh nồi bánh tét trên bếp lửa bập bùng là nét truyền thống văn hóa mỗi
+                                    dịp Tết đến xuân về
                                 </p>
-                                <button class="rounded-pill bg-primary">Đặt hàng ngay</button>
+                                <button class="rounded-pill bg-primary text-light py-3 px-4 border-0 fw-bold">Đặt hàng
+                                    ngay</button>
                             </div>
-                            <div class="card-ing w-50">
-                                <img src="assets/images/camVinh1-scaled-1.jpg" alt="">
+                            <div class="card-img w-50">
+                                <img src="assets/img/web-component/main-slider/banh-tet-can-tho.jpg" alt=""
+                                    class="img-fluid object-fit-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-fluid d-flex">
+                            <div class="card-data w-50 align-content-center">
+                                <h2 class="h1" style="font-weight: bold;">
+                                    Khô Cá Đù Cà Mau
+                                </h2>
+                                <p>
+                                    Khô cá đù có nhiều thịt và ít xương, phần đuôi của cá có nhiều mỡ nên béo. Thịt cá
+                                    thơm có vị ngọt dịu, đặc biệt thịt mềm hơi dẻo, hậu bùi nên chế biến được rất nhiều
+                                    món ngon và dinh dưỡng
+                                </p>
+                                <button class="rounded-pill bg-primary text-light py-3 px-4 border-0 fw-bold">Đặt hàng
+                                    ngay</button>
+                            </div>
+                            <div class="card-img w-50">
+                                <img src="assets/img/web-component/main-slider/khocadu2.jpg" alt=""
+                                    class="img-fluid object-fit-cover">
                             </div>
                         </div>
                     </div>
@@ -121,10 +158,54 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
+        </section>
+        <section class="feature-product">
+
+        </section>
     </main>
-    <footer>
-        <div class="container d-flex">
+    <footer class="mt-5">
+        <div class="container-lg justify-content-center">
+            <div class="card mb-3" >
+                <div class="row g-0">
+                    <div class="col-12 col-lg-4">
+                        <img src="assets/img/web-component/temp.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body row">
+                            <div class="col">
+                                <h3>
+                                    HOTLINE HỖ TRỢ (24/7)
+                                </h3>
+                                <h3 class="text-warning">
+                                    +84 012 345 678
+                                </h3>
+                                <p><a href="mailto:info@dacsanmientay.com">info@dacsanmientay.com</a></p>
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    TRỤ SỞ CHÍNH
+                                </h3>
+                                <p>
+                                    Trang trại Cam Vinh Kỳ Yến,  Xã Minh Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An, Việt Nam
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    THEO DÕI CHÚNG TÔI
+                                </h3>
+                                <div class="fs-4">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-tiktok"></i>
+                                    <i class="bi bi-twitter-x"></i>
+                                    <i class="bi bi-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg d-flex mt-5">
             <div>
                 <h3>
                     CÔNG TY CP NÔNG NGHIỆP SINH THÁI ECOVI
@@ -172,9 +253,9 @@
                     <button>submit</button>
                 </div>
                 <div class="d-flex" id="footer-certificate">
-                    <img src="assets/images/footer/ncsc.webp" alt="">
-                    <img src="assets/images/footer/DMCA.webp" alt="">
-                    <img src="assets/images/footer/boCongThuong.webp" alt="">
+                    <img src="assets/img/web-component/footer/ncsc.webp" alt="">
+                    <img src="assets/img/web-component/footer/DMCA.webp" alt="">
+                    <img src="assets/img/web-component/footer/boCongThuong.webp" alt="">
                 </div>
             </div>
         </div>
