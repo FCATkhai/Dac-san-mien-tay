@@ -27,7 +27,7 @@ img {
 }
 
 /* -------------- Main swiper --------------------- */
-.swiper {
+.mainSwiper {
     width: 100%;
     height: calc(100vh - 95px);
 }
@@ -50,6 +50,18 @@ img {
     height: 100%;
     width: 100%;
 }
+/* -------------- doi tac --------------------- */
+/* .doi-tac-Swiper {
+    align-items: center;
+} */
+
+.doi-tac-Swiper .swiper-wrapper img {
+    height: 90px;
+    object-fit: contain;
+}
+
+
+
 /* -------------- footer --------------------- */
 footer {
     gap: 20px;
