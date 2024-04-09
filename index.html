@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/web-component/logo-transparent.png">
     <title>Đặc sản Quê</title>
 </head>
 
@@ -32,25 +33,26 @@
                 </div>
             </div>
             <div class="fs-5">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-tiktok px-2"></i>
-                <i class="bi bi-youtube"></i>
+                <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-tiktok px-2"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-lg-5" href="#"><img src="assets/img/web-component/logo.png" alt=""
-                        id="logo"></a>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid px-5">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-brand ms-lg-5" href="index.html"><img src="assets/img/web-component/logo-transparent.png" alt=""
+                        id="logo"></a>
+                
                 <div class="collapse navbar-collapse justify-content-between px-5" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <div class="d-flex link-page">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">GIỚI THIỆU</a>
@@ -65,26 +67,12 @@
                                 <a class="nav-link" href="#">LIÊN HỆ</a>
                             </li>
                         </div>
-                        <div class="d-flex align-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-search fs-3"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-cart3 fs-3"></i></a>
-                            </li>
-                        </div>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
                     </ul>
+                    
+                </div>
+                <div class="d-flex align-content-center gap-3">
+                        <a href="#"><i class="bi bi-search fs-3 text-dark"></i></a>
+                        <a href="#"><i class="bi bi-cart3 fs-3 text-dark"></i></a>
                 </div>
             </div>
         </nav>
@@ -303,7 +291,7 @@
                     Tập hợp đặc sản từ 13 tỉnh Miền Tây
                 </h2>
                 <div class="row justify-content-center mt-5">
-                    <div class="col-8 col-lg-4 fs-5">
+                    <div class="col-8 col-lg-5 fs-5">
                         <p>
                             Đặc sản Miền Tây là những sản phẩm ẩm thực đặc biệt từ vùng miền Tây của Việt Nam. Vùng này
                             nổi tiếng với đất đai màu mỡ và ẩm thực đa dạng, bao gồm các món ăn được làm từ trái cây
@@ -319,7 +307,7 @@
                             khám phá ẩm thực và văn hóa của vùng miền Tây xinh đẹp.
                         </p>
                     </div>
-                    <div class="col-8 col-lg-8">
+                    <div class="col-8 col-lg-7">
                         <img src="assets/img/web-component/map 2.png" alt="">
                     </div>
                 </div>
@@ -615,8 +603,8 @@
         <div class="container-lg justify-content-center">
             <div class="card mb-3 shadow">
                 <div class="row g-0">
-                    <div class="col-12 col-lg-4">
-                        <img src="assets/img/web-component/temp.png" class="img-fluid rounded-start" alt="...">
+                    <div class="col-12 col-lg-4 card-footer-img-wrapper">
+                        <img src="assets/img/web-component/temp2.png" class="img-fluid rounded-start card-footer-img" alt="card-footer-image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body row">
@@ -634,18 +622,18 @@
                                     TRỤ SỞ CHÍNH
                                 </h3>
                                 <p>
-                                    Trang trại Cam Vinh Kỳ Yến, Xã Minh Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An, Việt Nam
+                                    Khu II, Đường 3 Tháng 2, P. Xuân Khánh, Ninh Kiều, Cần Thơ
                                 </p>
                             </div>
                             <div class="col">
                                 <h3>
                                     THEO DÕI CHÚNG TÔI
                                 </h3>
-                                <div class="fs-4">
-                                    <i class="bi bi-facebook"></i>
-                                    <i class="bi bi-tiktok"></i>
-                                    <i class="bi bi-twitter-x"></i>
-                                    <i class="bi bi-youtube"></i>
+                                <div class="d-flex gap-3 fs-4">
+                                    <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+                                    <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -658,9 +646,9 @@
                 <h3>
                     CÔNG TY CP NÔNG NGHIỆP SINH THÁI <span class="d-inline d-lg-block">ĐẶC SẢN QUÊ</span>
                 </h3>
-                <p>Farmshop Hà Nội: 489 Hoàng Quốc Việt, Cổ Nhuế 1, Cầu Giấy, Hà Nội</p>
+                <p><span class="fw-bold">Farmshop Cần Thơ:</span> Khu II, Đường 3 Tháng 2, P. Xuân Khánh, Ninh Kiều, Cần Thơ</p>
                 <p>
-                    Farmshop Nha Trang: SH 10, Chung cư PH, 11 Võ Thị Sáu, P. Vĩnh Trường, Nha Trang, Khánh Hoà.
+                    <span class="fw-bold">Farmshop Nha Trang:</span> SH 10, Chung cư PH, 11 Võ Thị Sáu, P. Vĩnh Trường, Nha Trang, Khánh Hoà.
                 </p>
                 <p>
                     Giấy phép kinh doanh số: 0316247028
@@ -673,32 +661,33 @@
                 <h3>
                     Về Chúng Tôi
                 </h3>
-                <a href="#">Giới thiệu EcoVi</a>
+                <a href="#">Giới thiệu Đặc Sản Quê</a>
                 <a href="#">Hướng dẫn thanh toán</a>
                 <a href="#">Chính sách giao hàng</a>
-                <a href="#">Nông trại xoài EcoVi</a>
-                <a href="#">Tin tức Ecovi</a>
+                <a href="components/blog.html">Tin tức</a>
                 <a href="#">Liên hệ</a>
             </div>
             <div id="footer-product">
                 <h3>
                     Sản Phẩm
                 </h3>
-                <a href="#">Xoài 7 Chơn</a>
-                <a href="#">Cam Vinh Kỳ Yến</a>
-                <a href="#">Bưởi Chú Hoàng</a>
-                <a href="#">Mận Hậu Phiêng Khoài</a>
-                <a href="#">Cam Bóc Phủ Quỳ</a>
-                <a href="#">Cà Mói Mắm</a>
+                <a href="#">Sầu Riêng RI6</a>
+                <a href="#">Chùm Ruột</a>
+                <a href="#">Bánh Tét Cần Thơ</a>
+                <a href="#">Khô Cá Đù Cà Mau</a>
+                <a href="#">Quýt hồng Lai Vung</a>
+                <a href="#">Sơ ri Gò Công</a>
             </div>
             <div>
                 <h3>
                     Kết Nối
                 </h3>
                 <p>Đăng ký nhận tin khuyến mãi từ ĐSQ</p>
-                <div>
-                    <input type="email" placeholder="Email*">
-                    <button>submit</button>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="bi bi-send"></i>
+                    </button>
                 </div>
                 <div class="d-flex" id="footer-certificate">
                     <img src="assets/img/web-component/footer/ncsc.webp" alt="">
@@ -712,11 +701,9 @@
 </body>
 <script src="https://kit.fontawesome.com/965ecd562f.js" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
 <script src="script/index.js" type="module"></script>
 <script src="script/swiper.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

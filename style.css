@@ -23,9 +23,9 @@ a {
     max-height: 80px;
 }
 
-.navbar {
+/* .navbar {
     background-color: var(--bs-white) !important;
-}
+} */
 
 .navbar-nav {
     display: flex;
@@ -33,6 +33,15 @@ a {
     justify-content: space-between;
 }
 
+a.nav-link {
+    font-weight: 600;
+}
+
+a.nav-link.active, a.nav-link:hover {
+    color: var(--bs-secondary) !important;
+    text-decoration: underline;
+    text-underline-offset: 18px ;
+}
 
 /* -------------- Main swiper --------------------- */
 .mainSwiper {
@@ -202,6 +211,18 @@ a {
 /* -------------- footer --------------------- */
 footer {
     gap: 20px;
+}
+
+.card-footer-img-wrapper {
+    background: linear-gradient( #9cc4fc, #d0c3fc);
+}
+
+@media only screen and (max-width: 992px) {
+    .card-footer-img {
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 footer h3 {
