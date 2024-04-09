@@ -78,6 +78,67 @@ a {
 .zoom:hover div a img {
     transform: scale(1.1);
 }
+/* -------------- demo product --------------------- */
+
+.featureDemoProductWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 992px) {
+    .featureDemoProductWrapper img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.demo-title a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.demo-title + a {
+    color: var(--text-gray);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.productItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.productItem .productThumbnail {
+    margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+    .productItem .productThumbnail {
+        margin-bottom: 10px;
+    }
+}
+
+.productThumbnail {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+}
+
+.productThumbnail img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
 /* -------------- tin tuc --------------------- */
 .tin-tuc-title a {
     color: var(--secondary-color);
